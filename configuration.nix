@@ -3,6 +3,10 @@
   services.sshd.enable = true;
   networking.hostName = "nixos";
 
+  imports = [
+    ./secrets.nix
+  ];
+
   environment.systemPackages = with pkgs; [ vim git tmux htop ];
 
   users.users.nixos = {
