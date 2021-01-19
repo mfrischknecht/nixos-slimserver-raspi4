@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 {
   services.sshd.enable = true;
-  networking.hostName = "nixos";
+  networking.hostName = "squeezebox-server";
 
   imports = [
     ./secrets.nix
