@@ -5,6 +5,8 @@
 
   imports = [
     ./secrets.nix
+
+    ./services/slimserver/default.nix
   ];
 
   environment.systemPackages = with pkgs; [ vim git tmux htop ];
