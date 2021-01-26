@@ -5,5 +5,6 @@ in
 {
   services.slimserver.enable = true;
   systemd.services.slimserver.path = [ spotty ];
-  networking.firewall.allowedTCPPorts = [ 9000 9090 3438 ];
+  networking.firewall.allowedTCPPorts = [ 9000 9090 3483 ];
+  networking.firewall.allowedUDPPorts = [           3483 ];
 }
